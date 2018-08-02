@@ -1,0 +1,42 @@
+{
+  "name": "csp-interview-schedule-display-ui",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/schedule-repo": {
+      "target": "http://localhost:3001"
+    }
+  },
+  "env": {
+    "jest": true
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.0",
+    "react-datepicker": "^1.5.0",
+    "react-dom": "^16.4.0",
+    "react-input-mask": "^2.0.1",
+    "react-scripts": "1.1.4",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.81.1",
+    "styled-components": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start-mockapi": "node mock-service/server.js"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "json-server": "^0.14.0",
+    "react-test-renderer": "^16.4.1"
+  }
+}
